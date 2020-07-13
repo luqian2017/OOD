@@ -65,7 +65,7 @@ class ConcreteBuilder2 : public Builder
 public:
 	ConcreteBuilder2()
 	{
-		m_product=new Product();
+		m_product = new Product();
 	}
 	virtual void BuilderA()
 	{
@@ -97,7 +97,7 @@ public:
 //客户端
 int main()
 {
-	Direct *p = new Direct();
+	Direct* p = new Direct();
 	Builder* b1 = new ConcreteBuilder1();
 	Builder* b2 = new ConcreteBuilder2();
 
@@ -108,5 +108,6 @@ int main()
 	p->Construct(b2);  //调用第二种方式
 	Product* pb2 = b2->GetResult();
 	pb2->Show();
+
 	return 0;
 }

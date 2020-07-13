@@ -6,9 +6,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
 
-#include <string>
 #include <iostream>
-#include <vector>
 using namespace std;
 
 class Person
